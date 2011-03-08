@@ -1,8 +1,18 @@
-9 Fev 2010
+20 June 2010
 
-ABOUT CYRANO_PF
+ABOUT THIS THEME
 -----------
 
-The CYRANO_PF theme is a custom Drupal theme designed by Agence Cyrano for Association Provence Formation.
-Drupal integration is made by the Association Provence Formation's webmaster.
+This theme is a custom Drupal theme designed by Association Provence Formation's Webdesigner.
+Drupal integration and front-end developpement made by the Association Provence Formation's Webmaster.
 This theme is made for Drupal 6.
+
+
+ABOUT DRUPAL THEMING
+--------------------
+
+To learn how to build your own custom theme and override Drupal's default code,
+you should start reading the Theming Guide: http://drupal.org/theme-guide
+
+See the sites/all/themes/README.txt for more information on where to place your
+custom themes to ensure easy maintenance and upgrades.
