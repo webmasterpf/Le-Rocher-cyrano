@@ -1,0 +1,364 @@
+/*------------------------------------------------------*
+*-- CSS Drupal--------------*
+*------------------------------------------------------*/
+
+/*------------------------------------------------*
+ *---  Provence Formation Janv. 2010 --*
+ *------------------------------------------------*/
+
+/**********STYLE POUR LES BLOCS*******************/
+
+/**----HEADER---***/
+
+
+/**----MIDDLE---***/
+a#retour_haut{
+    display: none;
+    color: #AEC721;
+    text-decoration: none;
+    text-align: right;
+    float:right;
+}
+a:hover#retour_haut{
+    text-decoration: underline;
+}
+p{
+    padding: 2px 0;
+    margin: 0;
+}
+
+/*TABLES STYLES DIVERS*/
+.table_generik{
+    border: 0px solid black;
+    width: 95%;
+}
+.table_generik tr{
+    border: 0px solid black;
+}
+.table_generik tr.ligne_1{
+    background: transparent;
+    color: black;
+}
+.table_generik tr.ligne_2{
+   background: #ADC91F;
+   color: white;
+}
+.table_generik td{
+    border: 0px solid black;
+   
+}
+#table_frais{
+    border: 0;
+    width: 100%;
+}
+tr.tf_line_1{
+    color: white;
+    background: #01AAD3;
+}
+tr.tf_line_2{
+    color: #E85231;
+    background: white;
+}
+/*style lien en savoir plus*/
+li.node_read_more a{
+color : red;
+text-decoration: none;
+text-align:left;
+}
+li.node_read_more a:hover{
+text-decoration: underline;
+}
+/********JWRotator*******/
+.field-field-rotator{
+margin: auto;
+padding: 2px;
+border: 1px solid #000;
+width:400px;
+}
+
+/***placement miniatures lightbox2**/
+a.lightbox-processed img {
+padding: 2px;
+margin:0;
+}
+/****------formulaire contact/////////*/
+#contact-mail-page{
+margin: auto;
+width: 550px;
+padding: 0;
+}
+
+/**----CONTENT TOP---***/
+#content-header{
+padding: 5px;
+}
+/**style du fil d'ariane**/
+.breadcrumb {
+color:#d63e2a;
+text-decoration:none;
+}
+##ariane{
+    display: block;
+    width: auto;
+background: white;
+}
+
+.breadcrumb a{
+color:#4e4d5e;
+text-decoration:none;
+background: white;
+}
+.breadcrumb a:hover{
+color:#000;
+text-decoration:underline;
+}
+.annonce{
+    color:#E2017B;
+    font-size:16px;
+    font-weight:bold;
+    margin:11px 0 0;
+    padding:0;
+    text-align:center;
+}
+.annonce a{
+    color: #93117E;
+    text-decoration: none;
+    font-weight: bold;
+}
+.annonce a:hover{
+    text-decoration: underline;
+}
+#journal-pdf{
+    float: right;
+    display: block;
+}
+#journal-pdf a{
+    border: 0;
+}
+/*LISTE HOME ACTUALITE*/
+#HPDroite2 ul li{
+    
+}
+#HPDroite2 .views-field-title{
+    text-indent: 15px;
+}
+#HPDroite2 li a{
+    color: #93117E;
+    padding: 0;
+}
+#HPDroite2 li a:hover{
+    color: #E4007D;
+    padding: 0;
+}
+/**----CONTENT BOTTOM---***/
+#content-top{}
+.taxonomy{
+text-align:right;
+padding: 3px;
+margin: 0px;
+}
+.taxonomy a{
+color: #d63e2a;
+text-decoration:none;
+}
+.taxonomy a:hover{
+text-decoration:underline;
+}
+/*----page login------*/
+#user-login{
+margin: auto;
+width: 450px;
+padding:10px 0;
+}
+/**----COLONNE GAUCHE---***/
+#left-content p{
+	color:#000;
+
+}
+#left-content a{
+	color:#666666;
+	text-decoration:none;
+}
+#left-content a:hover{
+	color:#990000;
+	text-decoration:underline;
+}
+#left-content li{
+	margin:0;
+	padding: 0;
+	}
+/**----COLONNE DROITE---***/
+#right-content p{
+	color:#000;
+
+}
+#right-content a{
+	color:#666666;
+	text-decoration:none;
+}
+#right-content a:hover{
+	color:#990000;
+	text-decoration:underline;
+}
+#right-content li{
+	margin:0;
+	padding: 0;
+	list-style:none;
+}
+/************************/
+
+/***** PAGE DE BASE ******/
+#middle-content-base2col a{
+    color: #93117E;
+    text-decoration: none;
+    padding: 2px;
+}
+#middle-content-base2col a:hover{
+    color: #EFEFEF;
+    background:#93117E;
+
+}
+/***** PAGE LYCEE ******/
+#middle-content-pageLycee a{
+    color: #93117E;
+    text-decoration: none;
+    padding: 2px;
+}
+#middle-content-pageLycee a:hover{
+    color: #EFEFEF;
+    background:#93117E;
+
+}
+#middle-content-pageLycee h2{
+    color: #B6E026;
+    padding: 2px;
+    font-size: 16px;
+}
+#middle-content-pageLycee h3{
+    color: #93117E;
+    padding: 2px;
+    font-size: 14px;
+}
+/*PAGES ACTIVITE VIE DU LYCEE*/
+.item-list-activites{
+    margin: 0;
+}
+.item-list-activites h3{
+    color: #93117E;
+    padding:5px;
+    text-align:center;
+    font-size: 13px;
+}
+.item-list-activites a{
+    color: black;
+    text-decoration: none;
+}
+.item-list-activites a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.item-list-activites ul{
+    list-style: none;
+}
+.item-list-activites li{
+    list-style: none;
+    background: #EFEFEF;
+    padding: 3px;
+    margin:0 3px 3px;
+}
+.item-list-activites .views-field-title a{
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #AEC81F;
+}
+.view-liste-activites-lycee a.field-content{
+    color: red;
+}
+/*--------*/
+/* FLUX BLOC ACTU ASSO*/
+#block-aggregator-feed-1 {
+    margin: 5px 0;
+    color: #02A7D5;
+}
+#block-aggregator-feed-1 h3{
+   color: #E2017B;
+   padding: 2px;
+}
+#block-aggregator-feed-1 ul li{
+    list-style-position: inside;
+    list-style-type: square;
+   
+}
+#block-aggregator-feed-1 ul li a{
+    text-decoration: none;
+    color:#02A7D5;
+}
+#block-aggregator-feed-1 ul li a:hover{
+   color: #E2017B;
+}
+/*STYLE PAGE FORMATIONS INITIALES ARBRE*/
+#table-offre-formation, #table-offre-formation tbody{
+    width: 952px !important;
+    height: 669px !important;
+    border: 0;
+    border-collapse:collapse;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+   /* vertical-align: bottom;*/
+}
+
+#table-offre-formation tr{
+    width: 952px;
+    height: auto;
+    border: 0;
+     line-height: 0;
+     margin: 0;
+    padding: 0;
+}
+#table-offre-formation td{
+    width: auto;
+    height: auto;
+    border: 0;
+     line-height: 0;
+     margin: 0;
+    padding: 0;
+}
+#table-offre-formation img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 0;
+}
+/*FICHE FORMATION NODE.TPL*/
+#diapo_fiche{
+    width: 300px;
+    margin: 5px 0;
+    padding: 0;
+    display: block;
+}
+#programme{}
+#programme a{
+    text-decoration: none;
+    color: #93117E;
+    padding: 2px;
+}
+#programme a:hover{
+    color: #ADC821;
+    background: #93117E;
+}
+#content-inner-fiche-formations h2{
+    font-size: 16px;
+    color: #93117E;
+    padding: 3px;
+}
+#content-inner-fiche-formations h3{
+    font-size: 14px;
+    color: #ADC821;
+    padding: 2px;
+}
+#content-inner-fiche-formations ul li{
+    padding: 2px;
+    list-style: square inside none;
+    line-height: 1;
+}
