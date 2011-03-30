@@ -1,10 +1,17 @@
- <!-- ______________________ COLONNE GAUCHE _______________________ -->
+ <!-- ______________________ CUSTOM NODE.TPL POUR FICHE FORMATION _______________________ -->
+<!-- ______________________ COLONNE GAUCHE _______________________ -->
 
 
          <div id="left-content-fiche-formations">
               <?php if ($title): ?>
                 <h1 class="title"><?php print $title; ?></h1>
               <?php endif; ?>
+                <br clear="all"/>
+                <?php if ($node->field_complement_info_formation[0]['view']): ?>
+
+                <div class="complement_titre_fiche"><?php  (print $node->field_complement_info_formation[0]['view']); /*Info complementaire sur formation*/ ?></div>
+
+            <?php endif; ?>
 
                 <div id="diapo_fiche">
                    <?php foreach ((array)$node->field_diapo_deco as $item){ ?>
@@ -12,10 +19,15 @@
                     <?php } ?>
                                 
                 </div>
+                <?php if (
+                $node-> field_programme_formation[0]['view'] ):
+                   ?>
                 <div id="programme">
                 <?php  print $node->content['field_programme_formation']['field']['#title'] ?>
                 <?php print $node-> field_programme_formation[0]['view'] ?>
-                </div>
+                </div> 
+               <?php endif; ?>
+
                         <?php if ($left): ?>
                         <?php print $left; ?>
                  <?php endif; ?>

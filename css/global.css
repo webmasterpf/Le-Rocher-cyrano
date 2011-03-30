@@ -331,6 +331,11 @@ padding:10px 0;
     line-height: 0;
 }
 /*FICHE FORMATION NODE.TPL*/
+.complement_titre_fiche h3{
+    font-size: 14px;
+    color: #E1017B;
+    text-align: right;
+}
 #diapo_fiche{
     width: 300px;
     margin: 5px 0;
