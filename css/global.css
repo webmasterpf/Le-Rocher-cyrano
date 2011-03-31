@@ -274,6 +274,33 @@ padding:10px 0;
 .view-liste-activites-lycee a.field-content{
     color: red;
 }
+/*--------------------------------------------
+**********************************************
+        VUE BLOC VDL ARCHIVES FILTRE EXPOSE
+
+
+---------------------------------------------*/
+#vue-bloc-vdl-archives{}
+#vue-bloc-vdl-archives table{}
+#vue-bloc-vdl-archives tbody{}
+#vue-bloc-vdl-archives tr{
+    margin:5px 3px;
+    display: block;
+    background: #EFEFEF;
+}
+#vue-bloc-vdl-archives td{
+    padding: 3px;
+}
+#vue-bloc-vdl-archives td a{
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #AEC81F;
+    text-decoration: none;
+}
+#vue-bloc-vdl-archives td a:hover{
+    color: black;
+}
+#vue-bloc-vdl-archives{}
 /*--------*/
 /* FLUX BLOC ACTU ASSO*/
 #block-aggregator-feed-1 {
