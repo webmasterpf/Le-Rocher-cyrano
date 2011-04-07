@@ -5,7 +5,7 @@
     <title><?php print $head_title; ?></title>
     <!--  _____META SEO_______ -->
     <meta name="google-site-verification" content="BcygBpeibR_udGKY5GKvsNmezztMGp_k2iZJS6au1JA" />
-    <meta name="msvalidate.01" content="ADFD4C87A757AE4461AE5F7793002836" />
+    <meta name="msvalidate.01" content="E2114447554473259DE0996EF11B87E0" />
     <meta name="y_key" content="ebe97757bb161b9c"/>
     <?php print $head; ?>
     <?php print $styles; ?>
