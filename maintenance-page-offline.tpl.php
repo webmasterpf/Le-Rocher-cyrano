@@ -2,7 +2,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <?php
   $head_title = 'Lyc&eacute;e Provence Formation :: Site-offline';
-  $logo = '/drupal6/sites/all/themes/Celony_cyrano/images/logo_celony.gif';
+  $logo = '/sites/all/themes/Le-Rocher-cyrano-PF/images/logo_le-rocher.gif';
 
   // If your theme is set to display the site name, uncomment this line and replace the value:
    $site_name = 'Le site du lyc&eacute;e';
@@ -18,7 +18,11 @@
 
   // Main message. Note HTML markup.
   $content = "<p>Le site rencontre actuellement des probl&egrave;mes techniques, veuillez nous en excuser.</p><hr /><p>Si vous en &ecirc;tes l'administrateur, veuillez v&eacute;rifier les acc&egrave;s &agrave; votre base de donn&eacute;es </p>";
-?>
+
+  //Texte pour le footer
+  $footer ='<p>Lycée Le Rocher - Montée de la Transhumance 13300 Salon-de-Provence - Tél: 04.90.56.13.79 - Fax: 04.90.56.71.26<br>
+Tous droits réservés © 2011-2012 Reproduction interdite sans autorisation</p>';
+  ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">
 
 <head>
@@ -89,7 +93,7 @@ print $content;
     	 <br clear="all"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
          <div id="footer-offline">
-             
+         <?php print $footer; ?>
 
          </div>
     </body>
