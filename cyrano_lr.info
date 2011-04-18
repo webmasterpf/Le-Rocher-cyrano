@@ -1,5 +1,5 @@
-name = Le Rocher Cyrano inspired
-description = Theme pour site Le Rocher - Design by Cyrano - Integration by Aiphes
+name = Le Rocher inspired by Cyrano 
+description = Theme pour site Le Rocher - Design and Integration by Webmaster PF
 version = VERSION
 core = 6.x
 engine = phptemplate
