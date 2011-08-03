@@ -143,6 +143,14 @@ color: #000000;
     height:auto;
     background: white url(../images/fieldset_top.gif) repeat-x scroll left 11px;
    }
+
+ #content-top-home{
+    margin:0 auto;
+    padding:5px;
+    width:970px;
+    height:70px;
+    background: white url(../images/fieldset_top.gif) repeat-x scroll left 65px;
+   }
   /*------------------------------------------------------*
   *------------ CSS H  ----*
   *------------------------------------------------------*/

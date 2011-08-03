@@ -112,20 +112,22 @@ background: white;
 color:#000;
 text-decoration:underline;
 }
-.annonce{
+#annonce{
     color:#E2017B;
-    font-size:16px;
-    font-weight:bold;
-    margin:11px 0 0;
-    padding:0;
-    text-align:center;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 15px 0 0 0;
+    text-align: center;
+    width: 950px;
 }
-.annonce a{
+#annonce a{
     color: #93117E;
     text-decoration: none;
     font-weight: bold;
 }
-.annonce a:hover{
+#annonce a:hover{
     text-decoration: underline;
 }
 #journal-pdf{

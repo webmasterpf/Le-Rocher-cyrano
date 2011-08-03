@@ -5,9 +5,9 @@
 	<div id="mainPage">
 	 
 
-          <?php if ($content_top): ?>
-            <div id="content-top">
-              <?php print $content_top; ?>
+          <?php if ($content_top_home): ?>
+            <div id="content-top-home">
+              <?php print $content_top_home; ?>
             </div> <!-- /#content-top -->
           <?php endif; ?>
 

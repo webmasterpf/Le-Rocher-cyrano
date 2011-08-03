@@ -26,6 +26,7 @@ regions[PartieDroite1] = Zone Droite 1 HP - Bloc
 regions[PartieDroite2] = Zone Droite 2 HP - Bloc
 regions[PartieDroite3] = Zone Droite 3 HP - Bloc
 regions[content_top] = Content top
+regions[content_top_home] = Content top homepage
 regions[revue_presse] = Revue de presse Colonne Gauche - Bloc
 regions[actuAssociation] = Zone Actualité de l'association - Bloc
 regions[formulaire] = Zone formulaire bloc
@@ -36,7 +37,7 @@ regions[centralBloc] = Zone pour bloc central - View Bloc
 regions[content_bottom] = Content bottom
 regions[content_bottom_home] = Content bottom homepage
 regions[footer_block] = Footer
-regions[test_bloc] = TEST BLOC
+;regions[test_bloc] = TEST BLOC
 
 
 settings[basic_zen_tabs]             = 1

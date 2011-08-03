@@ -1,6 +1,6 @@
 <?php
 // permet template suggestions avec page-
-function phptemplate_preprocess(&$vars, $hook)
+function cyrano_lr_preprocess(&$vars, $hook)
 {
   switch($hook)
   {
@@ -13,7 +13,57 @@ function phptemplate_preprocess(&$vars, $hook)
 
   }
 }
+?>
+<?php
+/*Permet d'attribuer un template de node différent selon terme de taxo et type de contenu
+ * - NE PAS OUBLIER DE CHANGER LE NOM DU THEME !!!___
+http://drupal.org/node/723544 ET http://drupalfr.org/forum/support/developpement/26735-theming-template-commun-95*/
+//nettoyage du nom pour usage dans tpl
+function valideChaine($term){
+$term = preg_replace('<code>\s+</code>', '<em>', trim($term));
+  $term = str_replace("'", "</em>", $term);
+  $term = preg_replace('<code>_+</code>', '</em>', trim($term));
+  $NomTermeValide=strtr($term,"ÀÁÂÃÄÅàáâãäåÒÓÔÕÖØòóôõöøÈÉÊËèéêëÇçÌÍÎÏìíîïÙÚÛÜùúûüÿÑñ",
+  "aaaaaaaaaaaaooooooooooooeeeeeeeecciiiiiiiiuuuuuuuuynn");
+  return ($NomTermeValide);
+}
 
+function cyrano_lr_preprocess_node(&$vars, $hook) {
+//Partie regions dans node.tpl- ajoute les regions utiles au node.tpl
+ $vars['pole_bloc_G'] = theme('blocks', 'pole_bloc_G');
+ $vars['pole_bloc_C'] = theme('blocks', 'pole_bloc_C');
+ $vars['pole_bloc_D'] = theme('blocks', 'pole_bloc_D');
+ $vars['col_G1'] = theme('blocks', 'col_G1');
+ $vars['col_G2'] = theme('blocks', 'col_G2');
+ $vars['col_G3'] = theme('blocks', 'col_G3');
+ //
+//Partie template node.tpl
+$node = $vars['node'];
+$lesTypes=array('page_fiche_formation', 'page_pole','contenu_actualites');
+//ajouter les vids possibles pour chaque quelquesoit le type
+$lesVid=array('1','5');// vid 1 pour pole formation, vid 5 pour type actualite
+// on regarde si le type est dans le tableau
+if ( in_array($node->type,$lesTypes) ) {
+       if ( ! empty($node->taxonomy)  ) {
+// Récupération du 1er element du tableau
+           $term = array_shift($node->taxonomy);
+    // verifie si l'un des termes appartiennent bien à l'un des vid définis dans le tableau
+           if ( in_array($term->vid,$lesVid) ) {
+
+              $tplfile = 'node-'.$node->type.'-'. $term->vid.'-'.$term->tid ;
+              $vars['template_files'][] = $tplfile ;
+          //drupal_set_message('Term name : '.$term->name,'status');
+           drupal_set_message('Template file : '.$tplfile.'.tpl.php','status');
+          }
+
+
+      }
+ //drupal_set_message('Type du node hors : '.$node->type,'status');
+// drupal_set_message('Term name hors : '.$term->name,'status');
+    }
+}
+?>
+<?php
 // fonction pour avoir la possibilité de faire un template pour page recherche
 function phptemplate_preprocess_page(&$vars) {
   if (module_exists('path')) {
@@ -27,7 +77,8 @@ function phptemplate_preprocess_page(&$vars) {
     }
   }
 }
-
+?>
+<?php
 // permet le debugage de php avec drupal
 function debug_print($var) {
   drupal_set_message('<pre>'. print_r($var, TRUE) .'</pre>');
@@ -36,7 +87,8 @@ function debug_print($var) {
 function cyrano_lr_webform_view_messages($node, $teaser, $page, $submission_count, $limit_exceeded, $allowed_roles) {
   theme_webform_view_messages($node, $teaser, $page, 0, $limit_exceeded, $allowed_roles);
 }
-
+?>
+<?php
 // permet d'ouvrir en blank les fichiers uploadés via filefield
 //NE PAS OUBLIER DE CHANGER NOM DU THEME !!!
 function cyrano_lr_filefield_file($file) {
@@ -72,7 +124,8 @@ $options['attributes']['target'] = '_blank';
 
   return '<div class="filefield-file clear-block">'. $icon . l($link_text, $url, $options) .'</div>';
 }
-
+?>
+<?php
 /*_______________FONCTIONS POUR ACTION SUR AGGREGATOR____________*/
 /* modify link items in the aggregator to open in a new window and
 suppress the "blog it" icon & links should the module ever be enabled.
