@@ -220,6 +220,8 @@ padding:10px 0;
     background:#93117E;
 
 }
+#middle-content a{}
+#middle-content a:hover{}
 /***** PAGE LYCEE ******/
 #middle-content-pageLycee a{
     color: #93117E;
@@ -279,11 +281,14 @@ padding:10px 0;
 /*--------------------------------------------
 **********************************************
         VUE BLOC VDL ARCHIVES FILTRE EXPOSE
-
-
 ---------------------------------------------*/
-#vue-bloc-vdl-archives{}
-#vue-bloc-vdl-archives table{}
+#vue-bloc-vdl-archives{
+    width: 99%;
+    margin: 0 auto;
+}
+#vue-bloc-vdl-archives table{
+    
+}
 #vue-bloc-vdl-archives tbody{}
 #vue-bloc-vdl-archives tr{
     margin:5px 3px;
@@ -395,4 +400,14 @@ padding:10px 0;
     padding: 2px;
     list-style: square inside none;
     line-height: 1;
+}
+/*-----------------------------------
+------- PAGE PROJET -----------------
+*************************************/
+#middle-content-projet a{
+    color: #93117E;
+    text-decoration: none;
+}
+#middle-content-projet a:hover{
+    text-decoration: underline;
 }
