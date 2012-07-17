@@ -411,3 +411,28 @@ padding:10px 0;
 #middle-content-projet a:hover{
     text-decoration: underline;
 }
+/*-----------------------------------
+------- INFO ADMINISTRATIVE ---------
+*************************************/
+#liste-docs-admin table{width: 500px;margin: 5px auto;}
+#liste-docs-admin tr{background: #EFEFEF;}
+#liste-docs-admin td{padding: 5px;}
+#liste-docs-admin a{text-decoration: none;color: #93117E;}
+#liste-docs-admin a:hover{text-decoration: underline;}
+
+/*____ ARCHIVES INFOS ADMIN ____*/
+table#archives-info-admin,#views-exposed-form-liste-activites-lycee-block-3 {width: 600px;margin: 5px auto;}
+#archives-info-admin tr{}
+#archives-info-admin td{padding: 5px;display: block;width: 100%;}
+#archives-info-admin td:hover{background: #EFEFEF;}
+#archives-info-admin a{display: block;color:#93117E;}
+#archives-info-admin a:hover{}
+
+/*____ INFOS ADMIN ACCUEIL ____*/
+table#info-admin-hp{width: 460px;margin: 5px auto;}
+#info-admin-hp tr{}
+#info-admin-hp {}
+#info-admin-hp td{background: #EFEFEF;padding: 5px;margin: 2px;}
+#info-admin-hp a{color: #93117E;text-decoration: none;}
+#info-admin-hp a:hover{text-decoration: underline;}
+#block-views-liste_activites_lycee-block_4 h3{color: #93117E;text-align: center;}

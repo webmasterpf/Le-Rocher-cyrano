@@ -8,9 +8,7 @@
  */
 
 ?>
-
-
-    <?php
+<?php
 
 $viewname_dc1 = 'Docs_contenu';
 $view = views_get_view ($viewname_dc1);
@@ -26,7 +24,7 @@ $view->execute();
 
 if (!empty($view->result)) {
   // S'il y a un resultat on récupère le titre (ajoute tag h3, et le contenu)
-  $output = '<div id="ID"><h3 class="CLASSE">'.$view->get_title().'</h3>' .$view->preview($viewdisplay_dc1, $args_dc1).'</div>';
+  $output = '<div id="liste-docs-admin"><h3 class="CLASSE">'.$view->get_title().'</h3>' .$view->preview($viewdisplay_dc1, $args_dc1).'</div>';
 
   //Affiche la vue si contenu
 print $output;
@@ -34,8 +32,8 @@ print $output;
 //sinon affiche texte vide
 elseif (empty($view->result)) {
     //Formatage du texte vide,ajout du titre de la vue
-     $outputEmpty = '<div id="ID"><h3 class="CLASSE">'.$view->get_title().'</h3>' .$emptyText.'<br>'.$emptyTextVue.'</div>';
-     drupal_set_message('$EmptyTextVue : '.$emptyTextVue,'status');
+     $outputEmpty = '<div id="liste-docs-admin"><h3 class="CLASSE">'.$view->get_title().'</h3>' .$emptyText.'<br>'.$emptyTextVue.'</div>';
+     //drupal_set_message('$EmptyTextVue : '.$emptyTextVue,'status');
      //Affichage du texte vide
   print $outputEmpty;
 }

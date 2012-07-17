@@ -16,7 +16,7 @@
             <h1 class="titre_page"><?php print $title; ?></h1>
             <?php endif; ?>
              <?php
-              global $theme_path;
+              $theme_path = drupal_get_path('theme', 'cyranod7_lr');
               include ($theme_path.'/includes/inc_region_col_G1.php');
               ?>
         </div>
