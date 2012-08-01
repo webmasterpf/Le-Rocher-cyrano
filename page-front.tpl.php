@@ -11,6 +11,7 @@
             </div> <!-- /#content-top -->
           <?php endif; ?>
 
+           
    <!-- ______________________ ZONE DIAPO _______________________ -->
 			
               <?php if ($DiapoHP): ?>

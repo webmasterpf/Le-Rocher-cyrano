@@ -148,8 +148,8 @@ color: #000000;
     margin:0 auto;
     padding:5px;
     width:970px;
-    height:70px;
-    background: white url(../images/fieldset_top.gif) repeat-x scroll left 65px;
+    height:90px;
+    background: white url(../images/fieldset_top.gif) repeat-x scroll left bottom;
    }
    /*//////////////////////\\\\\\\\\\\\\\\\\\\\\\
 ********** LAYOUT NODE.TPL OVERRIDE **********
@@ -167,6 +167,7 @@ color: #000000;
 .col1_layout_18_56_25{}
 .col1_layout_225_735{width: 225px;}
 .col1_layout_250_700{width: 250px; float: left;}
+.col1_layout_320_660{width: 320px;}
 /*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
 #colonne-2, #middle-content-override{
     padding: 5px;
@@ -178,18 +179,13 @@ color: #000000;
 .col2_layout_18_56_25{}
 .col2_layout_225_735{width: 735px;}
 .col2_layout_250_700{width: 700px; float: left;}
+.col2_layout_320_660{width: 660px;}
+
 /*//////////////// COLONNE 3 \\\\\\\\\\\\\\\\*/
-#colonne-3{
-   padding: 3px;
-    
-}
-.col3_layout_200_570_200{
-     width: 200px;
-    float: left;
-}
+.col3_layout_200_570_200{width: 200px;float: left;}
 .col3_layout_330_all{}
 .col3_layout_18_56_25{}
-/*//////////////// COLONNE 3 \\\\\\\\\\\\\\\\*/
+
 #colonne-unik{padding: 3px;width: 990px;}
 /*//////////////// BORDER COLONNE 1 \\\\\\\\\\\\\\\\*/
 

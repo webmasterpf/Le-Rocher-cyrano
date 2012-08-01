@@ -436,3 +436,24 @@ table#info-admin-hp{width: 460px;margin: 5px auto;}
 #info-admin-hp a{color: #93117E;text-decoration: none;}
 #info-admin-hp a:hover{text-decoration: underline;}
 #block-views-liste_activites_lycee-block_4 h3{color: #93117E;text-align: center;}
+#block-views-liste_activites_lycee-block_4 {border: 1px solid #93117E;padding: 5px;}
+/*********************************
+----------------------------------
+---- RESEAUX SOCIAUX Service links
+---------------------------------*/
+.service-links, #content-bottom-home .service-links{
+    background: none repeat scroll 0 0 #EFEFEF;
+    display: block;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: center;
+    width: 850px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+   behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;
+}
+.service-links a{margin: 0 5px;color: #F29400;}
+.service-links a:hover{text-decoration: none;}
+.service-links{}
