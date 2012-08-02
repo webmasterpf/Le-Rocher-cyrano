@@ -1,7 +1,6 @@
 <?php include "inc_header.php"; ?>
- <!-- ______________________ LAYOUT PAGE FORMATIONS POLE _______________________ -->
-<?php //redesign 2012 - tri par pôles métiers?> 
- <!-- ______________________ CONTENU _______________________ -->
+ <!-- ______________________ LAYOUT PAGE FORMATIONS ARBRE _______________________ -->
+  <!-- ______________________ CONTENU _______________________ -->
   
       <div id="contentPage">
       
@@ -21,7 +20,7 @@
             <?php endif; ?>       
      
        <!-- ______________________ CONTENT CENTRAL GLOBAL _______________________ -->
-        <div id="content-inner-poleMetier" class="inner column center">
+        <div id="content-inner-arbreFormations" class="inner column center">
 		             
 		
            
@@ -44,10 +43,11 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-poleMetier">
+          <div id="middle-content-arbreFormations">
               <pre> <?php //print_r($node); ?> </pre>
             <?php print $content; ?>
-      
+               <?php print $test_bloc; ?>
+              <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
 
         

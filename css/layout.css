@@ -501,6 +501,26 @@ background-color: white;
 #right-content-contact{}
 
 /*lien sur logo PF*/
-.img_lien_pf{
-	border: 0;
-	}
+.img_lien_pf{border: 0;}
+
+/*--------------------------------------
+**** POLE FORMATION REDESIGN 2012 ******
+_________________________________________*/
+.bloc-pole a{text-align: center;}
+.bloc-pole{width: 240px;float: left;margin: 0 3px;}
+.bloc-pole a{color: #911381;text-decoration: none;line-height: 1.6em;padding: 1px;text-align: center;display: block;}
+.bloc-pole a:hover{background:#ADC821;color: whitesmoke;}
+.bloc-pole h3{text-align: center;margin:0 0 5px 0;}
+.bloc-pole .complement{text-align: center;font-style: italic;color: #7A7B85;display: block;}
+
+#industrie table{width:235px;background: #EFEFEF;border:3px solid #F39300;padding: 3px;margin: 22px 0 0 0;}
+#restauration table{width:235px;background:#EFEFEF;border:3px solid #ADC91F;padding: 3px;margin: 22px 0 0 0;}
+#services table{width:235px;background: #EFEFEF;border:3px solid #01AAD3;padding: 3px;}
+#orientation table{width:235px;background: #EFEFEF;border:3px solid #E1017B;padding: 3px;margin: 22px 0 0 0;}
+
+#industrie h3{color: #F39300;}
+#services h3{color: #01AAD3;}
+#restauration h3{color: #ADC91F;}
+#orientation h3{color: #E1017B;}
+#industrie tr,#services tr,#restauration tr,#orientation tr{margin: 2px 0;}
+#industrie td,#services td,#restauration td,#orientation td{padding: 10px 5px;display: block;}
