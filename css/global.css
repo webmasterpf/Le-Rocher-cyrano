@@ -401,6 +401,7 @@ padding:10px 0;
     list-style: square inside none;
     line-height: 1;
 }
+.views-field-field-complement-info-formation-value{text-align: center;margin: 0 auto;width: 160px;}
 /*-----------------------------------
 ------- PAGE PROJET -----------------
 *************************************/
@@ -411,6 +412,10 @@ padding:10px 0;
 #middle-content-projet a:hover{
     text-decoration: underline;
 }
+/*-------------------------------------
+_______ COMMUN VDL _________*/
+#middle-content-sortie a,#middle-content-foyer a{color: #93117E;}
+.field-field-video-externe {display: block;margin: 0 auto;width: 500px;}
 /*-----------------------------------
 ------- INFO ADMINISTRATIVE ---------
 *************************************/
@@ -425,6 +430,7 @@ table#archives-info-admin,#views-exposed-form-liste-activites-lycee-block-3 {wid
 #archives-info-admin tr{}
 #archives-info-admin td{padding: 5px;display: block;width: 100%;}
 #archives-info-admin td:hover{background: #EFEFEF;}
+#archives-info-admin td .views-field-created,#archives-info-admin td .views-field-name{color: #4e4d5e; font-size: 10px;text-align: right;}
 #archives-info-admin a{display: block;color:#93117E;}
 #archives-info-admin a:hover{}
 
