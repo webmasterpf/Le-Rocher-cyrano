@@ -20,23 +20,14 @@
             </div> <!-- /#content-top-node -->
             <?php endif; ?> 
             
-            <!-- ______________________ COLONNE GAUCHE _______________________ -->
-
-			  <?php if ($left): ?>
-         <div id="left-content-vie-lycee">
-           
-            <?php print $left; ?>
-          </div>
-             <?php endif; ?> <!-- /sidebar-left -->
+     
       
        <!-- ______________________ CONTENT INNER _______________________ -->
 		
         
         <div id="content-inner-vie-lycee" class="inner column center">
 		             
-		    <?php if ($title): ?>
-                <h1 class="title"><?php print $title; ?></h1>
-              <?php endif; ?>
+	
            
 
           <?php if ($mission || $messages || $help || $tabs): ?>
@@ -77,17 +68,7 @@
         <?php endif; ?>
 
        
-		  <!-- ______________________ COLONNE DROITE _______________________ -->
-        <?php if ($right): ?>
-         <!--debut du contenu droit -->
-		<div id="right-content-vie-lycee">
-			
-				
-            <?php //print $right; ?>
-        </div>
-        <?php endif; ?> <!-- /sidebar-right -->
 
-   
     	 <br clear="all"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>

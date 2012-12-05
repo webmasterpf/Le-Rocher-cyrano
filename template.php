@@ -33,9 +33,9 @@ function cyrano_lr_preprocess_node(&$vars, $hook) {
  $vars['pole_bloc_G'] = theme('blocks', 'pole_bloc_G');
  $vars['pole_bloc_C'] = theme('blocks', 'pole_bloc_C');
  $vars['pole_bloc_D'] = theme('blocks', 'pole_bloc_D');
- $vars['col_G1'] = theme('blocks', 'col_G1');
- $vars['col_G2'] = theme('blocks', 'col_G2');
- $vars['col_G3'] = theme('blocks', 'col_G3');
+ $vars['col_C1'] = theme('blocks', 'col_C1');
+ $vars['col_C2'] = theme('blocks', 'col_C2');
+ $vars['col_C3'] = theme('blocks', 'col_C3');
  //
 //Partie template node.tpl
 $node = $vars['node'];
@@ -84,8 +84,8 @@ function debug_print($var) {
   drupal_set_message('<pre>'. print_r($var, TRUE) .'</pre>');
 }
 //Webform "You have already submitted this form." message off
-function cyrano_lr_webform_view_messages($node, $teaser, $page, $submission_count, $limit_exceeded, $allowed_roles) {
-  theme_webform_view_messages($node, $teaser, $page, 0, $limit_exceeded, $allowed_roles);
+function cyrano_lr_webform_view_messages($node, $teaser, $page, $submission_count,$user_limit_exceeded,$total_limit_exceeded, $allowed_roles,$closed,$cached) {
+  theme_webform_view_messages($node, $teaser, $page, 0, $user_limit_exceeded,$total_limit_exceeded, $allowed_roles,$closed,$cached);
 }
 ?>
 <?php

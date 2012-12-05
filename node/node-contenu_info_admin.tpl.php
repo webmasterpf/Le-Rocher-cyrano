@@ -17,7 +17,7 @@
             <?php endif; ?>
              <?php
               $theme_path = drupal_get_path('theme', 'cyrano_lr');
-              include ($theme_path.'/includes/inc_region_col_G1.php');
+              include ($theme_path.'/includes/inc_region_col_C1.php');
               ?>
         </div>
         <!--______________COLONNE 2________________ -->
@@ -46,7 +46,10 @@
                     <?php  print $node->nom_du_champ[0]['view']  ?>
             </div>
             <?php endif;?>
-                
+                 <?php
+              $theme_path = drupal_get_path('theme', 'cyrano_lr');
+              include ($theme_path.'/includes/inc_region_col_C2.php');
+              ?>
                 
                 
             </div>

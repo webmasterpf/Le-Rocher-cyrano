@@ -325,17 +325,15 @@ background-color: white;
     	float:left;
 	position:relative;
 	background-color:transparent;
-	width: 700px;
+	width: 990px;
 }
 #middle-content-vie-lycee{
        	float:left;
 	position:relative;
 	background-color:transparent;
-	width: 700px;
+	width: auto;
 	padding:5px;
-        margin: 0 auto;
-        border-left: 1px solid #ACC624;
-        border-right: 1px solid #11B0D5;
+        margin: 0 auto;      
 }
 #right-content-vie-lycee{}
 /*LAYOUT SORTIE*/

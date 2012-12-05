@@ -68,19 +68,6 @@ text-align:left;
 li.node_read_more a:hover{
 text-decoration: underline;
 }
-/********JWRotator*******/
-.field-field-rotator{
-margin: auto;
-padding: 2px;
-border: 1px solid #000;
-width:400px;
-}
-
-/***placement miniatures lightbox2**/
-a.lightbox-processed img {
-padding: 2px;
-margin:0;
-}
 /****------formulaire contact/////////*/
 #contact-mail-page{
 margin: auto;
@@ -208,7 +195,12 @@ padding:10px 0;
 	list-style:none;
 }
 /************************/
-
+/*
+== BORDURES POUR ELEMENTS ===
+*/
+.bordG-rouge{border-left: 1px solid #E2001A;}
+.bordG-violet{border-left:  1px solid #93117E;}
+.bordG-vert{border-left: 1px solid #ADC821;}
 /***** PAGE DE BASE ******/
 #middle-content-base2col a{
     color: #93117E;
@@ -428,7 +420,7 @@ _______ COMMUN VDL _________*/
 /*____ ARCHIVES INFOS ADMIN ____*/
 table#archives-info-admin,#views-exposed-form-liste-activites-lycee-block-3 {width: 600px;margin: 5px auto;}
 #archives-info-admin tr{}
-#archives-info-admin td{padding: 5px;display: block;width: 100%;}
+#archives-info-admin td{margin: 2px 0;padding: 5px;display: block;width: 100%; background:#D0D1D2;}
 #archives-info-admin td:hover{background: #EFEFEF;}
 #archives-info-admin td .views-field-created,#archives-info-admin td .views-field-name{color: #4e4d5e; font-size: 10px;text-align: right;}
 #archives-info-admin a{display: block;color:#93117E;}
@@ -443,6 +435,11 @@ table#info-admin-hp{width: 460px;margin: 5px auto;}
 #info-admin-hp a:hover{text-decoration: underline;}
 #block-views-liste_activites_lycee-block_4 h3{color: #93117E;text-align: center;}
 #block-views-liste_activites_lycee-block_4 {border: 1px solid #93117E;padding: 5px;}
+/*________ FOYER (liste) ________*/
+#views-exposed-form-liste-actu-foyer-page-1,#views-exposed-form-liste-activites-lycee-block-2,#views-exposed-form-liste-activites-lycee-block-3
+{width: 55%;margin: 0 auto; background:#C68DBD;padding: 5px;}
+#views-exposed-form-liste-actu-foyer-page-1 label,#views-exposed-form-liste-activites-lycee-block-2 label,#views-exposed-form-liste-activites-lycee-block-3 label
+{color: darkslategrey;text-align: center;}
 /*********************************
 ----------------------------------
 ---- RESEAUX SOCIAUX Service links

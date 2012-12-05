@@ -7,9 +7,7 @@
 ?>
 
 <?php //regions pour inserer un bloc dans la colonne G1
-if ($col_G1): ?>
-<div id="region_col_G1">
-    <?php  print $col_G1; ?>
-</div>
-    <?php endif; ?>
+if ($col_C1): ?>
+    <?php  print $col_C1; ?>
+<?php endif; ?>
 <br clear="all"/>

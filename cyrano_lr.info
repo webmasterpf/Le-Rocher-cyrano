@@ -27,9 +27,9 @@ regions[formulaire] = Formulaire (centre) - Webform Bloc
 ;=== Region pour slideshow ===
 regions[frontpageSlideshow] = Zone Frontpage Slideshow
 ;=== Theming de node - inclusion de regions (via template.php) ===
-regions[Colonne_C1] = Colonne C1 - Theming de node
-regions[Colonne_C2] = Colonne C2 - Theming de node
-regions[Colonne_C3] = Colonne C3 - Theming de node
+regions[col_C1] = Colonne C1 - Theming de node
+regions[col_C2] = Colonne C2 - Theming de node
+regions[col_C3] = Colonne C3 - Theming de node
 
 features[] = logo
 features[] = name
