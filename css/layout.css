@@ -182,6 +182,7 @@ color: #000000;
 .col2_layout_320_660{width: 660px;}
 
 /*//////////////// COLONNE 3 \\\\\\\\\\\\\\\\*/
+#colonne-3{float: left;}
 .col3_layout_200_570_200{width: 200px;float: left;}
 .col3_layout_330_all{}
 .col3_layout_18_56_25{}
@@ -512,7 +513,7 @@ _________________________________________*/
 .bloc-pole .complement{text-align: center;font-style: italic;color: #7A7B85;display: block;}
 
 #industrie table{width:235px;background: #EFEFEF;border:3px solid #F39300;padding: 3px;margin: 22px 0 0 0;}
-#restauration table{width:235px;background:#EFEFEF;border:3px solid #ADC91F;padding: 3px;margin: 22px 0 0 0;}
+#restauration table{width:235px;background:#EFEFEF;border:3px solid #ADC91F;padding: 3px;margin: 0;}
 #services table{width:235px;background: #EFEFEF;border:3px solid #01AAD3;padding: 3px;}
 #orientation table{width:235px;background: #EFEFEF;border:3px solid #E1017B;padding: 3px;margin: 22px 0 0 0;}
 

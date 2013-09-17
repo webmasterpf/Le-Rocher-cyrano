@@ -1,4 +1,4 @@
-<?php include "inc_header.php"; ?>
+<?php  $theme_path = drupal_get_path('theme', 'cyrano_lr'); include ($theme_path.'/includes/inc_header.php'); ?>
  <!-- ______________________ LAYOUT PAGE LYCEE_______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
@@ -95,7 +95,6 @@
             </div><!-- /#content-bottom -->
           <?php endif; ?>
 	 </div> <!-- /contentPage -->
-	  
-	  <?php include "inc_footer.php";?>
-         <?php endif; ?>
-     
+
+<?php  $theme_path = drupal_get_path('theme', 'cyrano_lr'); include ($theme_path.'/includes/inc_footer.php'); ?>
+<?php endif; ?>     

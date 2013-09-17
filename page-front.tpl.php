@@ -1,4 +1,4 @@
-<?php include "inc_header.php"; ?>
+<?php  $theme_path = drupal_get_path('theme', 'cyrano_lr'); include ($theme_path.'/includes/inc_header.php'); ?>
 <!-- ______________________ LAYOUT HOMEPAGE _______________________ -->
  <!-- ______________________ CONTENU _______________________ -->
     
@@ -17,9 +17,6 @@
               <?php if ($DiapoHP): ?>
                  <div id="HPDiapo"><?php print $DiapoHP; ?></div>
               <?php endif; ?>
-              
-            
-         
 		 
 <!-- ______________________ PARTIE DROITE _______________________ -->
       
@@ -52,4 +49,4 @@
 	
 	
 	 </div> <!-- /mainPage -->
-     <?php include "inc_footer.php";?>
+     <?php  $theme_path = drupal_get_path('theme', 'cyrano_lr'); include ($theme_path.'/includes/inc_footer.php'); ?>

@@ -15,10 +15,10 @@
             <?php if ($title): /*copier le titre dans la colonne desirée*/?>
             <h1 class="titre_page"><?php print $title; ?></h1>
             <?php endif; ?>
-             <?php
-              $theme_path = drupal_get_path('theme', 'cyranod7_lr');
-              include ($theme_path.'/includes/inc_region_col_G1.php');
-              ?>
+              <?php
+              $theme_path = drupal_get_path('theme', 'cyrano_lr');
+              include ($theme_path.'/includes/inc_region_col_C1.php');
+              ?> 
         </div>
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->

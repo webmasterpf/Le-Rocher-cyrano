@@ -235,6 +235,13 @@ padding:10px 0;
     padding: 2px;
     font-size: 14px;
 }
+#right-content-pageLycee h3{font-size: 1.8em;font-family: Arista,Trebuchet MS,sans serif;text-align: center;color: #93117E;margin: 3px;}
+table.doc-joint-lycee {background: #EFEFEF;width: 75%;margin: 5px auto;}
+table.doc-joint-lycee a{padding: 3px;display:list-item;list-style-position: inside;}
+table.doc-joint-lycee .filefield-icon{display: none;}
+table.doc-joint-lycee{}
+h3.doc-joint-lycee-title{text-align: center;}
+.field-field-service-tiers{margin: 0 auto;width: 426px;padding: 2px;border: 3px solid #ADC91F;}
 /*PAGES ACTIVITE VIE DU LYCEE*/
 .item-list-activites{
     margin: 0;
@@ -460,3 +467,15 @@ table#info-admin-hp{width: 460px;margin: 5px auto;}
 .service-links a{margin: 0 5px;color: #F29400;}
 .service-links a:hover{text-decoration: none;}
 .service-links{}
+/*-----------------------------------
+------- ACTU GLOBALE  ---------
+*************************************/
+/*_____ LR ACTUS _____*/
+.grid-lr-actus table{display: block;}
+.grid-lr-actus tbody{background: #EFEFEF;box-shadow:0px 0px 5px #4e4d5e;display: block;}
+#block-views-Actus_liste-block_1 .view-header
+{font-size: 1.9em;font-family: Arista,Trebuchet MS,sans serif;text-align: center;color: #93117E;margin: 3px;}
+.grid-lr-actus tr{}
+.grid-lr-actus td{padding: 3px;}
+.grid-lr-actus a{color: #93117E;text-decoration: none;}
+.grid-lr-actus a:hover{color: #02A7D5;}

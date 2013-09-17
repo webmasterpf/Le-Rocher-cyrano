@@ -6,7 +6,7 @@ engine = phptemplate
 
 ;=== Regions customs depuis Starter ===
 regions[header] = Header (D6)
-regions[menuDyn] = Menu Header - Nice Menu (D6)
+regions[menuDyn] = Menu Header - menu javascript (D6)
 regions[navStatic] = Navigation par images - Bloc (D6)
 regions[DiapoHP] = Diaporama Homepage - Bloc (D6)
 regions[PartieDroite1] = Zone Droite 1 HP - Bloc (D6)
@@ -51,6 +51,10 @@ stylesheets[all][] = css/nice_menus_default.css
 stylesheets[all][] = css/style-backoffice.css
 stylesheets[all][] = css/search.css
 stylesheets[all][] = css/maintenance.css
+; CSS pour utiliser Superfish menu
+stylesheets[all][] = css/navigation/superfish/lr-superfish.css
+stylesheets[all][] = css/navigation/superfish/superfish-navbar.css
+;stylesheets[all][] = css/navigation/superfish/blue.css
 
 
 settings[basic_zen_tabs]             = 1

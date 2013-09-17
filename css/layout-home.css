@@ -62,7 +62,7 @@ text-align: center;color:#AEC81F;font-size: 23px;text-decoration: none;}
 /************PARTIE BASSE**************/
 #headBas{
 	width:990px;
-	height:115px;
+	height:130px;/*115px nice menu*/
 	float:none;
 	display:block;
 	margin:5px 0 0 0;

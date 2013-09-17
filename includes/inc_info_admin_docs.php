@@ -15,8 +15,8 @@ $view = views_get_view ($viewname_dc1);
 $viewdisplay_dc1 = $view->set_display('block_1');
 $args_dc1 = $view->set_arguments(array($node->nid));
 
-$emptyTextVue = $view->set_display('block_3')->display_options['empty'];
-$emptyText = $view->display_handler->set_option('empty','<div class="ma-classe">Texte vide.</div>');
+$emptyTextVue = $view->set_display('block_1')->display_options['empty'];
+$emptyText = $view->display_handler->set_option('empty','<div class="ma-classe">Pas de fichier à afficher.</div>');
 
 //Exécution de le vue
 $view->pre_execute();
