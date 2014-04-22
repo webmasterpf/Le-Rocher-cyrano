@@ -385,6 +385,9 @@ h3.doc-joint-lycee-title{text-align: center;}
     color: #ADC821;
     background: #93117E;
 }
+.lien-ficheform{}
+.lien-ficheform a{text-decoration: none;color: #93117E;padding: 2px;}
+.lien-ficheform a:hover{color: #ADC821;background: #93117E;}
 #content-inner-fiche-formations h2{
     font-size: 16px;
     color: #93117E;
