@@ -14,23 +14,33 @@
             <?php endif; ?>
 
                 <div id="diapo_fiche">
-                   <?php foreach ((array)$node->field_diapo_deco as $item){ ?>
-                    <?php print $item['view'] ?>
-                    <?php } ?>
-                                
+                   <?php //foreach ((array)$node->field_diapo_deco as $item){ ?>
+                    <?php //print $item['view'] ?>
+                    <?php //} ?>
+                    <?php if ($node->field_diapo_deco[0]['view']): ?>
+                        <?php print $node->field_diapo_ficheform[0]['view'] ?>
+                    <?php endif; ?>      
                 </div>
-                <?php if (
-                $node-> field_programme_formation[0]['view'] ):
-                   ?>
+                <?php if ($node-> field_programme_formation[0]['view'] ):?>
                 <div id="programme">
                 <?php  print $node->content['field_programme_formation']['field']['#title'] ?>
                 <?php print $node-> field_programme_formation[0]['view'] ?>
                 </div> 
                <?php endif; ?>
+                
+                <?php if ($node->field_lien_ficheform[0]['view']): ?>
+                    <div class="lien-ficheform">
+                        <ul>
+                            <li><?php print $node->field_lien_ficheform[0]['view'] ?></li>
+                            <li><?php print $node->field_lien_ficheform[1]['view'] ?></li>
+                            <li><?php print $node->field_lien_ficheform[2]['view'] ?></li>
+                        </ul>
+                    </div> 
+                <?php endif; ?>
 
-                        <?php if ($left): ?>
-                        <?php print $left; ?>
-                 <?php endif; ?>
+                <?php if ($left): ?>
+                    <?php print $left; ?>
+                <?php endif; ?>
           </div>
              <!-- /sidebar-left -->
 
