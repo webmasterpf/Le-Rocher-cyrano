@@ -452,11 +452,11 @@ table#info-admin-hp{width: 460px;margin: 5px auto;}
 {color: darkslategrey;text-align: center;}
 /*________ CLASSES DOCUMENTS ________*/
 .accordeon-classes{}
-.accordeon-classes table{width: auto;}
-.accordeon-classes tr{border-bottom: 1px solid #F29400;}
-.accordeon-classes tr:hover{background: gainsboro;}
-.accordeon-classes td{}
-.accordeon-classes{}
+.accordeon-classes a{color: #93117E;text-decoration: none;}
+.accordeon-classes a:hover{text-decoration: underline;}
+.accordeon-classes .views-accordion-item .accordion-header-active {
+background: #93117E;color: #CFD0D2;
+}
 /*********************************
 ----------------------------------
 ---- RESEAUX SOCIAUX Service links
