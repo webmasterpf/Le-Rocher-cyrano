@@ -38,9 +38,9 @@
                     </div> 
                 <?php endif; ?>
 
-                <?php if ($left): ?>
-                    <?php print $left; ?>
-                <?php endif; ?>
+                <?php //if ($left): ?>
+                    <?php //print $left; ?>
+                <?php //endif; ?>
           </div>
              <!-- /sidebar-left -->
 

@@ -48,7 +48,7 @@
       <!-- ______________________ INSERTION DU CONTENU DU NODE _______________________ -->
       
             <?php print $content; ?>
-              <?php print $feed_icons; ?>
+              <?php //print $feed_icons; ?>
           </div> <!-- /#content-area -->
 
         
