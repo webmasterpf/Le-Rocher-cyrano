@@ -1,4 +1,4 @@
-1 <!-- ______________________ CUSTOM NODE.TPL POUR FICHE FORMATION _______________________ -->
+<!-- ______________________ CUSTOM NODE.TPL POUR FICHE FORMATION _______________________ -->
 <!-- ______________________ COLONNE GAUCHE _______________________ -->
 
 
@@ -17,10 +17,19 @@
                    <?php //foreach ((array)$node->field_diapo_deco as $item){ ?>
                     <?php //print $item['view'] ?>
                     <?php //} ?>
-                    <?php if ($node->field_diapo_deco[0]['view']): ?>
+                    <?php //if ($node->field_diapo_deco[0]['view']): ?>
+                        <?php //print $node->field_diapo_deco[0]['view'] ?>
+                    <?php //endif; ?>    
+                    
+                          <?php //affichage diaporama views inclue via CCK
+                          if ($node->field_diapo_ficheform[0]['view']): ?>
                         <?php print $node->field_diapo_ficheform[0]['view'] ?>
-                    <?php endif; ?>      
+                    <?php endif; ?>  
                 </div>
+                
+                  
+                
+                
                 <?php if ($node-> field_programme_formation[0]['view'] ):?>
                 <div id="programme">
                 <?php  print $node->content['field_programme_formation']['field']['#title'] ?>
@@ -28,15 +37,23 @@
                 </div> 
                <?php endif; ?>
                 
-                <?php if ($node->field_lien_ficheform[0]['view']): ?>
-                    <div class="lien-ficheform">
-                        <ul>
-                            <li><?php print $node->field_lien_ficheform[0]['view'] ?></li>
-                            <li><?php print $node->field_lien_ficheform[1]['view'] ?></li>
-                            <li><?php print $node->field_lien_ficheform[2]['view'] ?></li>
-                        </ul>
-                    </div> 
-                <?php endif; ?>
+                    <?php
+                    /* 06/2015 Liste les fichiers à partir du tableau créé
+                     * création d'une liste dynamique 
+                     */
+                    if (!empty($node->field_lien_ficheform[0]['view'])): ?>
+                <div class="lien-ficheform">
+               <?php  print $node->content['field_lien_ficheform']['field']['#title'] ?>
+                    <ul>
+               <?php
+               foreach ($node->field_lien_ficheform as $key => $lien) {
+                    print '<li>'.$node->field_lien_ficheform[$key]['view'].'</li>';
+               }
+               ?>  
+                  </ul>   </div>
+            <?php endif;?>
+                
+           
 
                 <?php //if ($left): ?>
                     <?php //print $left; ?>
@@ -88,4 +105,4 @@
             <?php if (!empty($secondary_links)){ print theme('links', $secondary_links, array('id' => 'secondary', 'class' => 'links sub-menu')); } ?>
           </div> <!-- /navigation -->
         <?php endif; ?>
-           </div> <!-- /content-inner /content -->
+<!--           </div>  /content-inner /content -->
