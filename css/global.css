@@ -117,12 +117,18 @@ text-decoration:underline;
 #annonce a:hover{
     text-decoration: underline;
 }
-#journal-pdf{
-    float: right;
-    display: block;
+/* LISTE JOURNAL PDF */
+.liste-journal{}
+.liste-journal a{
+    text-decoration: none;
+    color: #93117E;
 }
-#journal-pdf a{
-    border: 0;
+.liste-journal a:hover{
+    text-decoration: underline;
+}
+#HPDiapo iframe{
+    border: 1px solid #B6E026;
+    padding: 0.3em;
 }
 /*LISTE HOME ACTUALITE*/
 #HPDroite2 ul li{
@@ -418,6 +424,7 @@ h3.doc-joint-lycee-title{text-align: center;}
 _______ COMMUN VDL _________*/
 #middle-content-sortie a,#middle-content-foyer a{color: #93117E;}
 .field-field-video-externe {display: block;margin: 0 auto;width: 500px;}
+.vie-lycee h3{text-align: center;color: #ADC821;}
 /*-----------------------------------
 ------- INFO ADMINISTRATIVE ---------
 *************************************/

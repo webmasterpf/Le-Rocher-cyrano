@@ -61,19 +61,7 @@
        
 
        
-		  <!-- ______________________ COLONNE DROITE _______________________ -->
-       
-         <!--d�but du contenu droit -->
-		<div id="right-content-fiche-formations">
-			
-		 <?php if ($right): ?>
-            <?php print $right; ?>
-                    <?php endif; ?>
-        </div>
-         <!-- /sidebar-right -->
- 
-   
-    	 <br clear="all"/>
+		
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
             <div id="content-bottom">

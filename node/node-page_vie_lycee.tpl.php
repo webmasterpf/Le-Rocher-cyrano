@@ -11,7 +11,7 @@
          * .col2_layout_200_590_200{} .col2_layout_330_all{} .col2_layout_18_56_25{}
          * .col3_layout_200_590_200{} .col3_layout_330_all{} .col3_layout_18_56_25{}
          */?>
-        <div id="colonne-1" class="col1_layout_250_700">
+        <div id="colonne-1" class="col1_layout_250_700 vie-lycee">
             <?php if ($title): /*copier le titre dans la colonne desirée*/?>
             <h1 class="titre_page"><?php print $title; ?></h1>
             <?php endif; ?>
@@ -22,7 +22,7 @@
         </div>
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
-        <div id="colonne-2" class="col2_layout_250_700 bordG-violet">
+        <div id="colonne-2" class="col2_layout_250_700 vie-lycee bordG-violet">
 
             <?php print $picture; ?>
 
