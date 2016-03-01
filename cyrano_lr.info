@@ -62,4 +62,9 @@ settings[basic_zen_tabs]             = 1
 settings[basic_wireframe]            = 0
 settings[basic_block_editing]        = 1
 settings[basic_rebuild_registry]     = 1
-scripts[] = js/general.js
+
+;chargement des plugins Jquery
+;tous les scripts sont chargés via template.php !!!
+
+;Action des plugins Jquery
+;chargé via le template.php

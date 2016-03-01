@@ -149,3 +149,31 @@ function cyrano_lr_more_link ($url, $title) {
   }
 }
 ?>
+<?php
+function cyrano_lr_preprocess_page(&$vars){
+// permet usage de vieilles versions de jQuery
+        //drupal_add_js(drupal_get_path('theme', 'cyrano_lr') . '/js/jquery-migrate-1.2.1.min.js', 'theme');
+//chargement des plugins qui utilisent la version de jQuery par défaut du site
+//   drupal_add_js(drupal_get_path('theme', 'cyrano_lr') . '/js/responsive-nav.js','theme');
+//   drupal_add_js(drupal_get_path('theme', 'cyrano_lr') . '/js/tinynav.min.js','theme');
+    //   drupal_add_js(drupal_get_path('theme', 'cyrano_lr') . '/js/jquery.navobile.min.js','theme');
+    //   drupal_add_js(drupal_get_path('theme', 'cyrano_lr') . '/js/jquery.jpanelmenu.min.js','theme');
+//    drupal_add_js(drupal_get_path('theme', 'cyrano_lr') . '/js/selectnav.min.js', 'theme');
+//    drupal_add_js(drupal_get_path('theme', 'cyrano_lr') . '/js/jquery.sticky.js', 'theme');
+  //  drupal_add_js(drupal_get_path('theme', 'cyrano_lr') . '/js/jquery.sidebar.min.js', 'theme');
+
+//chargement des scripts qui utilisent la version de jQuery par défaut du site
+//    drupal_add_js(drupal_get_path('theme', 'cyrano_lr') . '/js/js_jquery_defaut.js', 'theme');
+// mise en place du noConflict pour utiliser plusieurs versions de jQuery   
+//    drupal_add_js(drupal_get_path('theme', 'cyrano_lr') . '/js/jquery_init.js', 'theme');
+//chargement des plugins qui utilisent une version de jQuery plus récente
+    //drupal_add_js(drupal_get_path('theme', 'cyrano_lr') . '/js/jquery.flexslider.js', 'theme');
+    //drupal_add_js(drupal_get_path('theme', 'cyrano_lr') . '/js/jquery.bxslider.min.js', 'theme');
+    //drupal_add_js(drupal_get_path('theme', 'cyrano_lr') . '/3rdparty/buttons/js/buttons.js', 'theme');
+//    drupal_add_js(drupal_get_path('theme', 'cyrano_lr') . '/js/js_jquery_new.js', 'theme');
+    //  mise à disposition des 2 versions de jQuery
+//    drupal_add_js(drupal_get_path('theme', 'cyrano_lr') . '/js/jquery_exit.js', 'theme');
+
+    //die('les JS sont chargés');
+}
+?>

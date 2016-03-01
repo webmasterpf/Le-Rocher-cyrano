@@ -9,7 +9,14 @@
     <meta name="y_key" content="ebe97757bb161b9c"/>
     <?php print $head; ?>
     <?php print $styles; ?>
-    <?php print $scripts; ?>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>-->
+    
+    <?php // IMPORTANT : charger les librairies externes avant les scripts !! ?>
+   <?php print $scripts; ?>
+ 
+<!--    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">-->
+
     <!--<script src="<?php print $base_path . path_to_theme() ?>/js/typos.js" type="text/javascript" charset="utf-8"></script>-->
       
   </head>
