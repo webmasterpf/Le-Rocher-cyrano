@@ -27,7 +27,7 @@ Template page d'accueil custom
 }
 #logoHead img{
 	height:55px !important;
-	width:335px;
+	width:auto;
 	padding:0;
 	margin:0;
 }
