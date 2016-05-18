@@ -165,7 +165,7 @@ color: #000000;
 }
 .col1_layout_330_all{}
 .col1_layout_18_56_25{}
-.col1_layout_225_735{width: 225px;}
+.col1_layout_225_735{width: 225px;float: left;}
 .col1_layout_250_700{width: 250px; float: left;}
 .col1_layout_320_660{width: 320px;}
 /*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
@@ -177,7 +177,7 @@ color: #000000;
 }
 .col2_layout_330_all{}
 .col2_layout_18_56_25{}
-.col2_layout_225_735{width: 735px;}
+.col2_layout_225_735{width: 735px;float: right;}
 .col2_layout_250_700{width: 700px; float: left;}
 .col2_layout_320_660{width: 660px;}
 
@@ -202,13 +202,24 @@ color: #000000;
   /*------------------------------------------------------*
   *------------ CSS H  ----*
   *------------------------------------------------------*/
+h1,h2,h3,h4{
+ -ms-word-break: break-all;
+     //word-break: break-all;
 
+     // Non standard for webkit
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
 h1 {
 	margin: 0;
 	padding: 5px 0;
 	color:#93117E;
 	font-size: 24px;
         line-height:1em;
+              
 }
 
 h2 {
@@ -355,23 +366,13 @@ background-color: white;
 }
 
 #content-inner-sortie{
-width:735px;
-margin:0 auto;
-float:left;
+
 background-color: white;
 
 }
 
 #middle-content-sortie{
-    	float:left;
-	position:relative;
-	background-color:transparent;
-	width:735px !important;
-        width: 735px;
-	padding:5px;
-        margin: 0 auto;
-        border-left: 1px solid #93117E;
-        border-right: 1px solid #F09500;
+    
  }
  /*LAYOUT FOYER*/
 #left-content-foyer{
@@ -427,23 +428,17 @@ background-color: white;
 }
 
 #content-inner-projet{
-width:735px;
-margin:0 auto;
-float:left;
+
 background-color: white;
 
 }
 
-#middle-content-projet{
-    	float:left;
-	position:relative;
-	background-color:transparent;
-	width:735px !important;
-        width: 735px;
-	padding:5px;
-        margin: 0 auto;
+#colonne-2.contenu-vdl{
         border-left: 1px solid #93117E;
         border-right: 1px solid #F09500;
+ }
+ #colonne-2.contenu-vdl h3{
+        color: #EFEFEF; 
  }
  /*LAYOUT FICHES FORMATIONS*/
 #left-content-fiche-formations{
