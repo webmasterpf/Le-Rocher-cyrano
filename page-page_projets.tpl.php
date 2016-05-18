@@ -19,16 +19,7 @@
             </div> <!-- /#content-top-node -->
             <?php endif; ?> 
 
-       <!-- ______________________ COLONNE GAUCHE _______________________ -->
-	 <div id="left-content-projet">
-              <?php if ($title): ?>
-                <h1 class="title"><?php print $title; ?></h1>
-              <?php endif; ?>
-	<?php if ($left): ?>
-            <?php print $left; ?>
-        <?php endif; ?> <!-- /sidebar-left -->
-		   </div>
-		<!--fin du contenu gauche -->
+     <!-- ______________________ CONTENT INNER _______________________ -->
 
         <div id="content-inner" class="inner column center">
 
@@ -65,24 +56,6 @@
 
 
       </div> <!-- /content-inner /content -->
-
-
-        <?php if (!empty($primary_links) or !empty($secondary_links)): ?>
-          <div id="navigation" class="menu <?php if (!empty($primary_links)) { print "with-main-menu"; } if (!empty($secondary_links)) { print " with-sub-menu"; } ?>">
-            <?php if (!empty($primary_links)){ print theme('links', $primary_links, array('id' => 'primary', 'class' => 'links main-menu')); } ?>
-            <?php if (!empty($secondary_links)){ print theme('links', $secondary_links, array('id' => 'secondary', 'class' => 'links sub-menu')); } ?>
-          </div> <!-- /navigation -->
-        <?php endif; ?>
-
-
-		  <!-- ______________________ COLONNE DROITE _______________________ -->
-        <?php if ($right): ?>
-         <!--d�but du contenu droit -->
-		<div id="right-content-projet">
-
-            <?php print $right; ?>
-        </div>
-        <?php endif; ?> <!-- /sidebar-right -->
 
 
     	 <br clear="all"/>
